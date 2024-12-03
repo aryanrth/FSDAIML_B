@@ -3,6 +3,7 @@ import Student from "./student";
 import Pic from "./Pic.jpg";
 import StudentState from "./StudentState";
 import ImageManipulation from "./ImageManipulation";
+import UseEffectWorking from "./UseEffectWorking";
 
 function App() {
   const Studentdata = {
@@ -26,7 +27,8 @@ function App() {
     <div style={{ marginLeft: "200px" }}>
       {/* <Student data={Studentdata}/> */}
       {/* <StudentState /> */}
-      <ImageManipulation/>
+      {/* <ImageManipulation/> */}
+      <UseEffectWorking/>
       <div>
         {/* <Student
         college="ABES Engineering college"
