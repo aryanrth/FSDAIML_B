@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Student from "./student";
 import Pic from "./Pic.jpg";
 import StudentState from "./StudentState";
 import ImageManipulation from "./ImageManipulation";
 import UseEffectWorking from "./UseEffectWorking";
+import Registration from "../Registration";
+import Login from "../Login";
 
 function App() {
   const Studentdata = {
@@ -14,6 +16,7 @@ function App() {
     Name: "Aryan Kumar Rathore",
     section: "B",
   };
+  const[sharedata,setShareData]=useState();
   // let a = 20;
   // let mystyle = {
   //   backgroundColor: "cyan",
@@ -28,7 +31,9 @@ function App() {
       {/* <Student data={Studentdata}/> */}
       {/* <StudentState /> */}
       {/* <ImageManipulation/> */}
-      <UseEffectWorking/>
+      {/* <UseEffectWorking/> */}
+      <Registration  regdata={setShareData}/>
+      {/* <Login/> */}
       <div>
         {/* <Student
         college="ABES Engineering college"
